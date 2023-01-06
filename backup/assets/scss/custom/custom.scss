@@ -1,0 +1,97 @@
+//modal style
+.modal.no-t {
+  &.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  &.fade {
+    transition: none;
+    .modal-dialog {
+      transition: none;
+      transform: none;
+    }
+  }
+}
+
+//ng select 
+.other-filters {
+  ng-select {
+    .ui-select-toggle {
+      line-height: 24px;
+    }
+    .form-control,
+    .ui-select-container {
+      width: 160px;
+    }
+    i.dropdown-toggle.pull-right {
+      float: right;
+    }
+  }
+  ng-select:not(:first-child) {
+    margin-left: 20px;
+  }
+  ng-select .ui-select-match-text {
+    width: 120px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+  }
+  ng-select i.glyphicon.glyphicon-remove {
+    font-family: 'feather' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &:before {
+      content: "\ea01";
+    }
+  }
+  ng-select a.btn-link {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    margin-right: 0 !important;
+    background: #fff;
+    min-width: 1rem;
+  }
+}
+
+.card,
+.card-body {
+  border-radius: 0;
+}
+
+bs-datepicker-navigation-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background: none;
+  border: 0;
+  padding: 0.3rem 0;
+}
+
+.theme-default .bs-datepicker-head {
+  background-color: #b3c7ee;
+}
+
+.bs-datepicker-head button {
+  color: #495057;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+  .container {
+    max-width: 960px!important;
+  }
+}
